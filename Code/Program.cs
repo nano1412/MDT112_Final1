@@ -18,7 +18,6 @@ class Program
   }
   static void Main(string[] args)
   {
-    Console.Write("number of town: ");
     int numOfTown = int.Parse(Console.ReadLine());
     Town[] townArray = new Town[numOfTown];
     Input(ref townArray);
@@ -31,28 +30,33 @@ class Program
   {
     for (int thisTownID = 0; thisTownID < townArray.Length; thisTownID++)
     {
-      Console.Write("Town {0} name: ", thisTownID);
+      int addAdjacentTownID;
       string name = Console.ReadLine();
-      Console.Write("number of adjacent town: ");
       int numOfAdjacentTown = int.Parse(Console.ReadLine());
       int[] adjacentTownID = new int[numOfAdjacentTown];
+      SetupArray(ref adjacentTownID);
       for (int currentAdjacentTown = 0; currentAdjacentTown < adjacentTownID.Length; currentAdjacentTown++)
       {
-        Console.Write("Adjacent city ID {0}:",currentAdjacentTown);
-        int addAdjacentTownID = int.Parse(Console.ReadLine());
-        if (addAdjacentTownID > townArray.Length || addAdjacentTownID == thisTownID || addAdjacentTownID < 0)
+        addAdjacentTownID = int.Parse(Console.ReadLine());
+        
+        if (addAdjacentTownID > townArray.Length || addAdjacentTownID == thisTownID || addAdjacentTownID < 0 || adjacentTownID.Contains(addAdjacentTownID))
         {
           Console.WriteLine("Invalid ID");
           currentAdjacentTown--;
         }
         else
         {
-          addAdjacentTownID = adjacentTownID[currentAdjacentTown];
+          adjacentTownID[currentAdjacentTown] = addAdjacentTownID;
         }
       }
       townArray[thisTownID] = new Town(name,thisTownID, adjacentTownID);
     }
 
+  }
+  static void SetupArray(ref int[] array){
+    for(int i = 0; i < array.Length;i++){
+      array[i] = -1;
+    }
   }
 
   static void TestPrint(Town[] town){
@@ -60,7 +64,7 @@ class Program
       Console.WriteLine("Name: {0} ID: {1}",town[thisTown].name,town[thisTown].id);
       Console.WriteLine("adjacent town:");
       for(int currentAdjacentTown = 0; currentAdjacentTown < town[thisTown].adjacentTownID.Length; currentAdjacentTown++){
-        Console.WriteLine("{0} ID: {1} Name:{2}",currentAdjacentTown,town[thisTown].adjacentTownID[currentAdjacentTown],town[currentAdjacentTown]);
+        Console.WriteLine("{0} ID: {1} Name:{2}",currentAdjacentTown,town[thisTown].adjacentTownID[currentAdjacentTown],town[town[thisTown].adjacentTownID[currentAdjacentTown]].name);
       }
       Console.WriteLine("---------------------------");
     }
