@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\bin\Debug\net7.0\Code.exe
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\bin\Debug\net7.0\Code.deps.json
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\bin\Debug\net7.0\Code.runtimeconfig.json
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\bin\Debug\net7.0\Code.dll
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\bin\Debug\net7.0\Code.pdb
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.dll
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\refint\Code.dll
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.pdb
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\Code.genruntimeconfig.cache
+C:\Users\ADMIN\Desktop\MDT112\MDT112_Final1\Code\obj\Debug\net7.0\ref\Code.dll
